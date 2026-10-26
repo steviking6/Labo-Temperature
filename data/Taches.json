@@ -9,7 +9,7 @@
       "type": "factuelle",
       "description": "Extraction du montant d'une déclaration de sinistre dégât des eaux",
       "texte_source": "Objet : déclaration de sinistre - dégât des eaux\n\nMadame, Monsieur,\n\nJe soussigné Julien Marchetti, assuré sous le contrat habitation n° HAB-2026-48213, vous déclare un dégât des eaux survenu le 12/10/2026 dans mon appartement situé au 3e étage, 14 rue des Tanneurs, 87000 Limoges.\n\nDans la nuit, le tuyau d'arrivée d'eau de mon lave-linge s'est rompu. L'eau s'est répandue dans la cuisine et le séjour, sur environ 18 m². Le parquet, posé en 2019, a gonflé et le bas de deux placards est abîmé. J'ai coupé l'eau à 6h45 et prévenu mon voisin du 2e étage, qui ne constate aucun dégât chez lui.\n\nD'après le devis de l'entreprise Parquets Limousin daté du 15/10/2026, le montant total des dommages s'élève à 1 850 € TTC. Je note que ma franchise contractuelle est de 150 €.\n\nVous trouverez ci-joint le devis et 6 photos des dégâts.\n\nCordialement,\nJulien Marchetti\nTél. : 06 12 34 56 78",
-      "prompt": "Voici une déclaration de sinistre :\n\n{texte_source}\n\nDonne uniquement le montant du sinistre en euros (montant total des dommages déclarés), sous forme de nombre, sans phrase.",
+      "prompt": "Donne uniquement le montant du sinistre en euros (montant total des dommages déclarés), sous forme de nombre, sans phrase.",
       "reponse_attendue": 1850,
       "pieges": ["HAB-2026-48213", "12/10/2026", "18", "2019", "150", "15/10/2026", "6"]
     },
