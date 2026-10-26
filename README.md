@@ -65,7 +65,7 @@ Labo-Temperature/
 - **Le prompt envoyé contient le texte source deux fois** (`prompt_a` contient déjà le texte, puis `labo.py` le rajoute), alors que `sortie.csv` ne stocke que `prompt_a`. Cela peut influencer les résultats.
 - **Tâche B non exécutée** : tout ce qui concerne la créativité ci-dessous est un raisonnement, pas un résultat mesuré.
 
-## Conclusion assurance
+## Conclusion 
 
 **Extraction d'un montant de sinistre : température 0.**
 L'extraction est une tâche à une seule bonne réponse, avec un enjeu financier : une erreur de 50 € se répète sur des milliers de dossiers et se retrouve dans les provisions ou l'indemnisation. T=0 est la seule condition mesurée sans aucune erreur, et elle rend le traitement reproductible, donc auditable (même dossier, même résultat). Dès 0.3, environ 1 réponse sur 12 est fausse. En production il faut en plus un garde-fou indépendant (cohérence avec le devis, seuil d'alerte, relecture humaine par échantillonnage) : T=0 réduit le risque d'erreur, il ne le supprime pas.
